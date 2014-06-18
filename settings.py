@@ -1,3 +1,10 @@
+
+MONGO_HOST = 'ds031948.mongolab.com'
+MONGO_PORT = 31948
+MONGO_USERNAME = 'heroku_app26490822'
+MONGO_PASSWORD = 'k21es12ooav92gmjrd8eu5291i'
+MONGO_DBNAME = 'heroku_app26490822'
+
 people = {
     # 'title' tag used in item links.
     'item_title': 'person',
