@@ -11,9 +11,16 @@ if os.environ.get('MONGOLAB_URI'):
     
     MONGO_HOST = data['host']
     MONGO_PORT = int(data['port'])
-    MONGO_NAME = data['username']
-    MONGO_DATABASE = data['database']
+    MONGO_DBNAME = data['database']
+    MONGO_USERNAME = data['username']
     MONGO_PASSWORD = data['password']
+
+RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
+
+ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
+
+CACHE_CONTROL = 'max-age=20'
+CACHE_EXPIRES = 20
 
 people = {
     # 'title' tag used in item links.
