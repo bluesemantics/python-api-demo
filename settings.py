@@ -15,8 +15,6 @@ if os.environ.get('MONGOLAB_URI'):
     MONGO_USERNAME = data['username']
     MONGO_PASSWORD = data['password']
     
-    SERVER_NAME = "shrouded-cliffs-7782.herokuapp.com"
-
 RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
 
 ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
