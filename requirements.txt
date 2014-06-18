@@ -6,7 +6,6 @@ Flask-PyMongo==0.3.0
 Jinja2==2.7.2
 MarkupSafe==0.18
 Werkzeug==0.9.4
-gunicorn==19.0.0
 itsdangerous==0.22
 pymongo==2.6.3
 simplejson==3.3.0
