@@ -1,9 +1,19 @@
 
-MONGO_HOST = 'ds031948.mongolab.com'
-MONGO_PORT = 31948
-MONGO_USERNAME = 'heroku_app26490822'
-MONGO_PASSWORD = 'k21es12ooav92gmjrd8eu5291i'
-MONGO_DBNAME = 'heroku_app26490822'
+import os
+import re
+
+if os.environ.get('MONGOLAB_URI'):
+    r = r'^mongodb\:\/\/(?P<username>[_\w]+):(?P<password>[\w]+)@(?P<host>[\.\w]+):(?P<port>\d+)/(?P<database>[_\w]+)$'
+    regex = re.compile(r)
+    mongolab_url = os.environ['MONGOLAB_URI']
+    match = regex.search(mongolab_url)
+    data = match.groupdict()
+    
+    MONGO_HOST = data['host']
+    MONGO_PORT = int(data['port'])
+    MONGO_NAME = data['username']
+    MONGO_DATABASE = data['database']
+    MONGO_PASSWORD = data['password']
 
 people = {
     # 'title' tag used in item links.
