@@ -15,6 +15,8 @@ if os.environ.get('MONGOLAB_URI'):
     MONGO_USERNAME = data['username']
     MONGO_PASSWORD = data['password']
     
+    HATEOAS = False
+    
 RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
 
 ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
