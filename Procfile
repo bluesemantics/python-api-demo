@@ -1,1 +1,1 @@
-web: python run.py
+web: bin/start-nginx gunicorn -c gunicorn.py run:app
