@@ -8,6 +8,7 @@ MarkupSafe==0.18
 Werkzeug==0.9.4
 gunicorn==19.0.0
 itsdangerous==0.22
+newrelic==2.20.1.18
 pymongo==2.6.3
 simplejson==3.3.0
 wsgiref==0.1.2
