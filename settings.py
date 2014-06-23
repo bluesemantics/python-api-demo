@@ -8,21 +8,21 @@ if os.environ.get('MONGOLAB_URI'):
     mongolab_url = os.environ['MONGOLAB_URI']
     match = regex.search(mongolab_url)
     data = match.groupdict()
-    
+
     MONGO_HOST = data['host']
     MONGO_PORT = int(data['port'])
     MONGO_DBNAME = data['database']
     MONGO_USERNAME = data['username']
     MONGO_PASSWORD = data['password']
-    
+
     HATEOAS = False
-    
+
 RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
 
 ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
 
-CACHE_CONTROL = 'max-age=20'
-CACHE_EXPIRES = 20
+#CACHE_CONTROL = 'max-age=20'
+#CACHE_EXPIRES = 20
 
 people = {
     # 'title' tag used in item links.
