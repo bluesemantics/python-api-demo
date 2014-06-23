@@ -23,6 +23,7 @@ ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
 
 #CACHE_CONTROL = 'max-age=20'
 #CACHE_EXPIRES = 20
+XML = False
 
 people = {
     # 'title' tag used in item links.
